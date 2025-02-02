@@ -11,10 +11,11 @@ import Invitation from './Invitation';
 import Calendar from './Calendar';
 import Gallery from './Gallery';
 import Navi from './Navi';
+import Account from './Account';
 
 function App() {
   const debug = process.env.NODE_ENV === 'development'?"solid":"none";
-  
+  //console.log(navigator.clipboard)
   
 
 
@@ -43,7 +44,7 @@ function App() {
           <Navi/>
         </div>
         <div className = "fade-in" style={{ border: debug}}>
-          신랑신부 계좌 정보
+          <Account/>
         </div>
         <div className = "fade-in" style={{ border: debug}}>
           카카오톡 공유하기 / 모청 주소 복사하기
