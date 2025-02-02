@@ -3,7 +3,7 @@ import Modal from "./modal";
 //src/assets/images에 있는 모든 이미지를 한번에 불러오기 위한 방법입니다.
 const imagePaths = import.meta.glob('./assets/images/*.{png,jpg,jpeg,svg,webp}');
 
-const Gallery  = ({title}) => {
+const Gallery  = () => {
     //image의 modal을 사용하기 위한 부분
     const [image_modal, set_image_modal] = useState({isopen:false, src:null});
     //modal이 open될 경우 받아진 src를 source로 바꿔줌
@@ -53,7 +53,7 @@ const Gallery  = ({title}) => {
       }
     return  (
     <>
-      <h1>{title}</h1>
+      <h1>Gallery</h1>
       {
       [images].map((v, i) => {
           return (

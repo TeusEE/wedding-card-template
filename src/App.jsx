@@ -10,6 +10,7 @@ import Mainphoto from './Mainphoto';
 import Invitation from './Invitation';
 import Calendar from './Calendar';
 import Gallery from './Gallery';
+import Navi from './Navi';
 
 function App() {
   const debug = process.env.NODE_ENV === 'development'?"solid":"none";
@@ -39,7 +40,7 @@ function App() {
           <Gallery/>
         </div>
         <div className = "fade-in" style={{ border: debug}}>
-          결혼식 장소
+          <Navi/>
         </div>
         <div className = "fade-in" style={{ border: debug}}>
           신랑신부 계좌 정보
