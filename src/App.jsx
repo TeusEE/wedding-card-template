@@ -12,43 +12,40 @@ import Calendar from './Calendar';
 import Gallery from './Gallery';
 import Navi from './Navi';
 import Account from './Account';
+import Intersect from './Intersect';
 
 function App() {
   const debug = process.env.NODE_ENV === 'development'?"solid":"none";
-  //console.log(navigator.clipboard)
-  
-
-
   return (
     <>
       <div className='main-frame'>
         <div style={{ border: debug, textAlign: 'right' }}>
           <Audiocomp/>
         </div>
-        <div className = "fade-in" style={{ border: debug}}>
+        <Intersect className = "fade-in" style={{ border: debug}}>
           <Topmsg/>
-        </div>
-        <div className = "fade-in" style={{ border: debug}}>
+        </Intersect>
+        <Intersect className = "fade-in" style={{ border: debug}}>
           <Mainphoto/>
-        </div>
-        <div className = "fade-in" style={{ border: debug}}>
+        </Intersect>
+        <Intersect className = "fade-in" style={{ border: debug}}>
           <Invitation/>
-        </div>
-        <div className = "fade-in" style={{ border: debug}}>
+        </Intersect>
+        <Intersect className = "fade-in" style={{ border: debug}}>
           <Calendar/>
-        </div>
-        <div className = "fade-in" style={{ border: debug}}>
+        </Intersect>
+        <Intersect className = "fade-in" style={{ border: debug}}>
           <Gallery/>
-        </div>
-        <div className = "fade-in" style={{ border: debug}}>
+        </Intersect>
+        <Intersect className = "fade-in" style={{ border: debug}}>
           <Navi/>
-        </div>
-        <div className = "fade-in" style={{ border: debug}}>
+        </Intersect>
+        <Intersect className = "fade-in" style={{ border: debug}}>
           <Account/>
-        </div>
-        <div className = "fade-in" style={{ border: debug}}>
+        </Intersect>
+        <Intersect className = "fade-in" style={{ border: debug}}>
           카카오톡 공유하기 / 모청 주소 복사하기
-        </div>
+        </Intersect>
       </div>
     </>
   )
